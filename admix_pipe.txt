@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Step 1: Make the output directory
+mkdir -p admixture_pipeline_output_LC
+
+# Step 2: Run the pipeline
+admixturePipeline.py \
+  -m ../LT-pop-map.txt \
+  -v populations.snps.vcf \
+  -k 1 \
+  -K 8 \
+  -n 2 \
+  -t 12 \
+  -R 10
+
+# Step 3: Move resulting files (e.g., log files, .Q/.P files, cross-validation error, etc.)
+# Adjust this pattern if needed
+mv *.out *.Q *.P *.csv admixture_pipeline_output_LC/ 2>/dev/null

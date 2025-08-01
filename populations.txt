@@ -1,0 +1,24 @@
+### Populations
+
+### Multiple SNPs per Locus
+
+populations -P /home/eks0112/populations_LC/params-test_m3M3n3 \
+--popmap /home/eks0112/populations_LC/LT-pop-map.txt \
+-t 16 -O /home/eks0112/populations_LC/LC_multiple_R80_mac1/ \
+-R 0.8 --min-mac 3 --max-obs-het 0.5 --fasta-samples --vcf --radpainter --structure --genepop --plink --phylip-var --fstats
+
+
+### Single SNP per Locus
+
+populations -P /home/eks0112/populations_LC/params-test_m3M3n3 \
+--popmap /home/eks0112/populations_LC/LT-pop-map.txt \
+-t 16 -O /home/eks0112/populations_LC/LC_single_R80_mac1/ \
+-R 0.8 --min-mac 3 --max-obs-het 0.5 --fasta-samples --vcf --radpainter --structure --genepop --plink --phylip-var --fstats --treemix --write-single-snp
+
+
+### Populations Updated for R100 (Strict data missing filter)
+
+populations -P /home/eks0112/populations_LC/params-test_m3M3n3 \
+--popmap /home/eks0112/populations_LC/LT-pop-map.txt \
+-t 16 -O /home/eks0112/populations_LC/LC_single_R1.0_mac3/ \
+-R 1.0 --min-mac 3 --max-obs-het 0.5 --fasta-samples --vcf --radpainter --structure --genepop --plink --phylip-var --fstats --treemix --write-single-snp
