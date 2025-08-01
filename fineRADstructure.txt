@@ -1,0 +1,25 @@
+### fineRADstructure ###
+
+### STACKS populations
+
+# run populations with the --radpainter flag, use multiple SNPs per locus
+
+### RADpainter
+
+# navigate within multiple SNPs per locus directory, then run:
+
+RADpainter paint populations.haps.radpainter
+
+# this is already within the path on the server I used (Shoals)
+
+### fineRADstructure
+
+# now cluster the individuals using mcmc
+
+finestructure -x 1000000 -y 1000000 -z 1000 populations.haps_chunks.out populations.haps_chunks.mcmc.xml
+
+finestructure -m T populations.haps.chunkcounts.out LC_multiple
+
+### tree building
+
+finestructure -m T -x 1000000 populations.haps_chunks.out populations.haps_chunks.mcmc.xml populations.haps_chunks.mcmcTree.xml
