@@ -1,0 +1,1 @@
+Scripts from a population genomics study of the federally threatened Painted Rocksnail (Leptoxis coosaensis). This work was performed in the USFWS Southeast Conservation Genetics Lab at Auburn University by E.K. Strasko, P.D. Johnson, J.T. Garner, and N.V. Whelan.
