@@ -1,0 +1,1 @@
+process_radtags -1 3170.Undetermined_S0_L005_R1_001.fastq.gz -2 3170.Undetermined_S0_L005_R2_001.fastq.gz -o 3170_demultiplexed_LC.output/ -b 3170_1771_demultiplex.txt -c -r -D --index_index --disable_rad_check
