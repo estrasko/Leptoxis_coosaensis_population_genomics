@@ -19,3 +19,6 @@ The following scripts utilized LepCo_M:
 
 Allelic richness utilized haplotypes from the LepCo_M dataset generated in populations.
 
+<img width="725" height="725" alt="image" src="https://github.com/user-attachments/assets/425ddf7e-b11b-4383-a0ec-3f570c973531" />
+
+Leptoxis coosaensis illustration by Rebecca Piche (Instagram: @bybeccapeach; https://www.instagram.com/bybeccapeach/)
